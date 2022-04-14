@@ -1,3 +1,0 @@
-# Styled Components
-
-Em construção
