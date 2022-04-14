@@ -40,8 +40,8 @@ O React não é um framework e sim uma biblioteca voltada para a criação de in
 
   
 
-- ## ES2020
-
+- ## ES2020 / ES6
+ 
 
 
 - ## Webpack
