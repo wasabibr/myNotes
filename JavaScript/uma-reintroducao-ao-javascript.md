@@ -541,7 +541,6 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_Jav
         }
         return sum;
     }
-
     > add(2, 3, 4, 5)
     14
     ```
@@ -572,7 +571,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_Jav
     }
     > avgArray([2, 3, 4, 5])
     3.5
-```
+    ```
 
     Porém, seria legal se pudéssemos reusar a função que já tínhamos criado. Felizmente, JavaScript lhe permite chamar a função, e chamá-la com um conjunto arbitrário de argumentos, usando o método apply() presente em qualquer objeto função.
 
