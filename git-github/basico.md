@@ -5,19 +5,86 @@ _Lista de comandos básicos e dicas de utilização_
 >Enquanto o Git é um software VCS (Version Control System) local que permite aos desenvolvedores salvar snapshots de seus projetos ao longo do tempo. Geralmente é melhor para uso individual. GitHub é uma plataforma baseada na web que incorpora os recursos de controle de versões do gitHub para que possam ser usados colaborativamente.
 
 
-## Primeiros comandos com o Git
+## Introdução ao Git
 
-Iniciar o Git
+>A tecla **TAB** completa o nome da pasta, ou arquivo, que existe com uma primeira indicada.
+
+### Obtendo ajuda
 ```js
-> git init
+$ git help <verb>
+$ git <verb> --help
+$ git man  git -<verb>
 ```
 
-Iniciar o versionamento
+### Versão do Git
 ```js
-> git add
+$ git --version
 ```
 
-Criar um commit
+### Iniciar o Git
 ```js
-> git commit
+$ git init
+```
+
+### Configurando repositório
+```js
+$ git config --list
+$ git config --global --unset user.email
+$ git config --global --unset user.nickname
+$ git config --global --unset user.email "jefframosbr@gmail.com"
+$ git config --global --unset user.nickname "jefframosbr"
+$ git remote add origin https://github.com/wasabibr/livro-receitas.git
+$ git remote -v
+$ git push origin master
+```
+
+### Ver status dos arquivos para versionamento
+```js
+$ git status
+```
+
+### Iniciar versionamento
+```js
+$ git add .
+```
+ou
+```js
+$ git add *
+```
+ou
+```js
+$ git add <nome-do-arquivo>
+```
+ou
+```js
+$ git add *.js
+```
+
+### Criar um commit
+```js
+$ git commit -m "text"
+```
+
+### Resolvendo conflitos
+```js
+$ git pull origin master
+$ git clone https://github.com/python/cpython.git
+```
+
+### Ignorando arquivo
+```js
+$ 
+```
+ou
+```js
+$ 
+```
+ou
+```js
+$ 
+```
+
+### Clonando repositório
+```js
+$ git clone <endereço>
 ```
