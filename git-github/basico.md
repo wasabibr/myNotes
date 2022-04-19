@@ -45,10 +45,12 @@ $ git status
 
 ### Iniciar versionamento
 ```js
+// engloba tudo
 $ git add .
 ```
 ou
 ```js
+// similar ao "git add ."
 $ git add *
 ```
 ou
@@ -57,6 +59,7 @@ $ git add <nome-do-arquivo>
 ```
 ou
 ```js
+// seleciona apenas os arquivos com uma extensão específica
 $ git add *.js
 ```
 
