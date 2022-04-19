@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Git / GitHub
-=======
 # Git / GitHub
 _Lista de comandos básicos e dicas de utilização_
 
