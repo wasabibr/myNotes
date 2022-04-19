@@ -7,6 +7,10 @@ _Noções gerais_
 <p align="center">
   <img src="./img/v01f01.png">
 </p>
+O Princípio de Pareto também se aplica ao desenvolvimento de software, onde 20% das funcionalidades costumam gerar 80% ou mais do benefício esperado.
+
+> O princípio de Pareto afirma que, para muitos eventos, aproximadamente 80% dos efeitos vêm de 20% das causas.
+
 <p align="center">
   <img src="./img/v01f02.png">
 </p>
