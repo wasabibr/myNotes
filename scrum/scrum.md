@@ -133,3 +133,133 @@ Por que as Startups utilizam framework ágil?
 
 
 
+# Papéis e Responsabilidades de cada um do time
+
+
+
+## Papéis e Responbilidades
+
+
+
+<img src="./img/v02f01.png">
+
+
+
+**Product Owner (PO)**
+
+- Representante da área de Negócios;
+- PO não é um Comitê;
+- Define as funcionalidades do software (Product Backlog);
+- Prioriza as funcionalidades de acordo com o valor do negócio;
+- Garante que o time de desenvolvimento entenda os itens do Backlog no nível necessário.
+
+
+
+**Scrum Master (SM)**
+
+- Garantir o uso correto de SCRUM;
+- Scrum Master não é Gerente de Projetos;
+- Age como facilitador;
+- Auxilia o Product Owner no planejamento e estimativas do backlogs;
+- Auxilia a equipe a remover impedimentos;
+- Treina o time em autogerenciamento e interdisciplinaridade.
+
+
+
+**Time de Desenvolvimento (DEV)**
+
+- Possui habilidades suficientes para desenvolver, testar, criar e desenhar, ou seja, tudo que for necessário para entregar o software funcionando.
+
+
+
+# Cerimônias do SCRUM
+
+
+
+> **Time Box:** *Tempo máximo para fazer um Cerimônia ou Sprint*
+
+
+
+> **Sprint (corrida ou arrancada):** *É o principal evento do SCRUM. Um Sprint tem duração de, mais ou menos, 30 dias corridos.*
+
+
+
+### Composição de uma Sprint
+
+- Planejamento da Sprint;
+
+- Reuniões Diárias (Daily Meeting) [ Time Box de 15 minutos];
+
+- Revisão da Sprint (Review);
+
+- Retrospectiva da Sprint.
+
+  
+
+### Planejamento da Sprint
+
+_Feito no primeiro dia da Sprint_
+
+> Dura cerca de 8 horas, para uma Sprint de 30 dias. 
+
+#### Nas 4 primeiras tem o objetivo "do que fazer".
+
+Quem participa?
+
+- PO;
+- SM;
+- DEV.
+
+O quê fazer?
+
+- O PO vai explicar para o time quais são as funcionalidades que o time precisa entrega e os porquês, naquela Sprint.
+- O time DEV vai tirar todas as dúvidas sobre o que fazer em relação ao negócio, durante essas 4 primeiras horas, para entender o que o PO deseja.
+
+Como fazer?
+
+- O time DEV quebrar as atividades e entender tecnicamente como tudo deve ser feito.
+
+> Planning Poker: também chamado de Scrum poker, é uma técnica gamificada e baseada em consenso para estimar, usada principalmente para timeboxing nos princípios Agile.
+
+- O time DEV faz um estimativa de todas as tarefas, a serem realizadas naquela Sprint.
+- O time DEV vai, em seguida, verificar se tudo o que o PO queria, poderá ser entregue naquela Sprint.
+- O time DEV devolve para o PO o que ele realmente vai conseguir entregar naquela Sprint.
+
+
+
+### Reuniões Diárias (Daily Meeting)
+
+Participam o PO, SM e time DEV.
+
+O time DEV vai responder a três questões:
+
+- O que ele fez no dia anterior;
+- O que ele fará no dia;
+- E se tem algum impedimento.
+
+> A reunião é feita de pé e dura 15 minutos. Ela ocorre no mesmo local e horário estipulado pelo grupo. Ela é tambem conhecida com Standup Meeting.
+
+
+
+O quadro kanban permite a vizualização do andamento das tarefas realizadas.
+
+<img src="./img/v03f01.png">
+
+
+
+### Revisão da Sprint (Review)
+
+O time DEV apresenta para o PO o trabalho feito.
+
+> Realizada no último dia da Sprint ocorre uma revisão com duração de 4 horas, para uma Sprint de 30 dias.
+
+
+
+### Retrospectiva da Sprint
+
+Reunião da equipe DEV precisa ser transparente para apontar as Lições Aprendidas.
+
+> Relizada, também, no último dia da Sprint. Tem duração de 3 horas, para uma Sprint de 30 dias
+
+
+
