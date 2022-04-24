@@ -44,6 +44,10 @@ Em paralelo, quando se cria um novo repositório no **GitHub**, não existe nenh
 
 
 
+```js
+$ git checkout -b <nome da nova brach>
+```
+
 
 
 
