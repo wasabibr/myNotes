@@ -24,6 +24,8 @@
 
 ### Entendendo na prática sobre branches
 
+
+
 #### Main vs Master
 
 > Por muitos anos a branch padrão, na instalação do Git foi a master. Por outro lado, a branch padrão no GitHub é a main.
@@ -44,15 +46,52 @@ Em paralelo, quando se cria um novo repositório no **GitHub**, não existe nenh
 
 
 
+#### Navegação em branches
+
+> O camando checkout cria uma nova branch com o nome indicado e o atributo -b faz com que você comece a usá-la.
+
 ```js
-$ git checkout -b <nome da nova brach>
+$ git checkout -b <nome da nova branch>
+```
+
+ou
+
+```js
+$ git checkout <nome da nova branch>
+$ git branch <nome da nova branch>
+```
+
+#### Mesclando branches
+
+> O comando merge serve para mesclar uma branch secundária à uma branch principal.
+
+```js
+$ git merge <nome da branch que queremos fazer o merge>
+```
+
+#### Mudando o nome de uma branch (localmente)
+
+```js
+// Esse comando é utilizado quando se deseja mudar o nome da branch em que estamos naquele momento
+$ git branch -m <novo nome da branch atual>
+```
+
+```js
+// Essa comando é utilizado quando não estamos na branch a qual queremos mudar o nome
+$ git branch -m <nome da branch a ser mudada> <novo nome da branch a ser mudada>
+```
+
+#### Deletando uma branch (localmente)
+
+```js
+$ git branch -d <nome da branch>
 ```
 
 
 
 
 
-#### Navegação em branches
+
 
 
 
