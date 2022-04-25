@@ -272,15 +272,48 @@ $ gitk
 > GitHub Desktop => https://desktop.github.com/
 > 
 > GitKraken => https://www.gitkraken.com/
+> 
 > Para quem usa o VS CODE, uma solução oferecida é o GitLens
 
 
 
 ## Entenda como reverter commits
 
+Existem duas principais ideias quando queremos desfazer um commit, que podem ser:
+
+- se o commit já estiver no ambiente remoto. Nesse caso, desfazê-lo pode causar grandes problemas para outras pessoas programadoras que colaboram nesse repositório;
+- se o commit só estiver no ambiente local. Essa opção é bem mais segura.
+
+Vamos apresentar algumas possibilidades que você tem para desfazer um commit. Para entender melhor cada um dos comandos, você pode ler mais sobre no post específico. Algumas das possibilidades são:
+
+- **git revert**: é a forma mais segura de “desfazer” um commit, pois ele não apaga o commit do histórico. O que ele faz é pegar as alterações do commit que você quer reverter e criar um novo commit com essas alterações desfeitas. A grande vantagem é que ele não altera o histórico de commits do seu repositório;
+- **git reset**: se você realmente precisa apagar um commit, muitas vezes por conter alguma informação mais sensível, você pode usar o **git reset**. Se o commit já estiver no ambiente remoto, lembre-se sempre de comunicar o time;
+- **git reflog**: com esse comando você consegue ter acesso aos logs de referências, também conhecidos como reflogs, de cada um dos commits. A partir disso, você consegue deletar ou realizar outras operações com cada uma das referências.
+
+Agora que você já sabe o que é um commit e as variações que você pode usar desse mesmo comando, dá para começar a entender a importância do histórico nos seus projetos e repositórios. Principalmente, se mais de uma pessoa desenvolvedora faz alterações nesse mesmo projeto. 
 
 
+### Conceitos iniciais
 
+#### git reset
+> **Para onde a gente pode apontar**
+> 
+> **git reset**: O primeiro atributo que podemos passar para esse comenando é o "hash de um commit", ou ainda um HEAD~1 (veja onde está a HEAD e mova 1 para trás
+> 
+> **Flags**
+> 
+> **git reset --soft**
+> 
+> **git reset --mixed**
+> 
+> **git reset --hard**
+
+#### git revert
+> **git revert HEAD~1**
+> 
+> **git revert <hash de um commit**
+
+#### git revert vs git reset
 
 
 
