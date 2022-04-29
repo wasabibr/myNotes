@@ -2,6 +2,10 @@
 
 ## Introdução a verbos HTTP para formulários
 
+
+- HTTP funciona sob o modelo Request / Response;
+- Métodos / Verbos: a foprma como você vai interagir com um recurso na WEB.
+
 > oi
 
 ```js
