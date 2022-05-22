@@ -154,3 +154,136 @@ Na linguagem SQL, podemos utilizar o comando CREATE para criar tabelas e bases d
 
 
 
+## O que é o PHPMyAdmin?
+
+> **phpMyAdmin** é uma ferramenta de software livre escrita em PHP, destinada a lidar com a administração do MySQL através da web.
+
+![Resultado de imagem para phpmyadmin](https://upload.wikimedia.org/wikipedia/commons/9/95/PhpMyAdmin_logo.png)
+
+**Site oficial**: [https://www.phpmyadmin.net](https://www.phpmyadmin.net/)
+
+
+
+## Exemplo de Base de Dados, com Banco
+
+Os comandos serão apresentados na sequência.
+
+```
+// Criando a Base de Dados
+CREATE DATABASE JEFFERSON
+```
+
+```
+// Crindo a tabela ALUNO
+CREATE TABLE ALUNO(
+    NOME VARCHAR(255),
+    EMAIL VARCHAR(255),
+    DATA_NASCIMENTO DATE,
+    ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+)
+```
+
+```
+// Criando a tabela CURSO
+CREATE TABLE CURSO(
+    NOME VARCHAR(255),
+    DURACAO VARCHAR(20),
+    ID INT NOT NULL	AUTO_INCREMENT PRIMARY KEY
+)
+```
+
+```
+// Criando a tabela de relação ALUNO-CURSO
+CREATE TABLE ALUNO_CURSO(
+    ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    ID_ALUNO INT NOT NULL,
+    ID_CURSO INT NOT NULL
+)
+```
+
+```
+// Renomeando a tabela ALUNO para ALUNOS, CURSO para CURSOS
+// e ALUNO_CURSO para ALUNOS_CURSOS
+RENAME TABLE ALUNO TO ALUNOS;
+RENAME TABLE CURSO TO CURSOS;
+RENAME TABLE ALUNO_CURSO TO ALUNOS_CURSOS
+```
+
+
+
+## DROP versus DELETE
+
+
+
+>**DROP**: do inglês derrubar, soltar, jogar
+>
+>**DELETE**: do inglês apagar, deletar
+
+
+
+Na linguagem SQL, DROP é um comando do tipo DDL, ou seja, comando de definição de dados; enquanto, DELETE é um comando do tipo DML, ou seja, manipulação de dados.
+
+- Use DROP para excluir tabelas e bases de dados;
+- Use DELETE para deletar dados em tabelas.
+
+Exemplo:
+
+```
+DROP TABLE ABCD;
+DELETE FROM ALUNOS WHERE ID = 2
+```
+
+
+
+## Comando de inserção
+
+
+
+> **INSERT: INSERIR**
+
+
+
+Na linguagem SQL, podemos utilizar o comando INSERT para inserir dados em uma tabela. INSERT é um comando do tipo **DML** (*Data Manipulation Language* - Linguagem de Manipulação de Dados). Veja os exemplos a seguir:
+
+```
+INSERT INTO MINHA_TABELA (CAMPOS) VALUES("VALORES")
+```
+
+(traduzido ao pé da letra seria "INSERIR DENTRO DA MINHA TABELA (NOME DAS COLUNAS QUE QUER FAZER INSERÇÃO) OS VALORES ('COLOCAR VALORES ENTRE ASPAS OU APÓSTROFOS')").
+
+\* Observe que números não precisam de aspas.
+
+Exemplo
+
+```
+INSERT ALUNOS(NOME,EMAIL,DATA_NASCIMENTO) VALUES("Alice","alice@oliveira.com","2017-10-24")
+```
+
+
+
+## Comando de seleção
+
+
+
+>**SELECT: SELECIONAR**
+
+
+
+Na linguagem SQL, podemos utilizar o comando SELECT para ler dados de tabelas. SELECT é um comando do tipo DQL (Data Query Language - Linguagem de Consulta de dados). Veja os exemplos a seguir:
+
+```
+SELECT * FROM MINHA_TABELA
+```
+
+
+(traduzido ao pé da letra seria "SELECIONAR * DA MINHA_TABELA", onde asterisco representa "TUDO")
+
+Você poderia especificar colunas que deseja fazer a seleção, alterando o *. Por exemplo:
+
+```
+SELECT NOME FROM ALUNOS
+```
+
+
+("SELECIONAR (coluna) NOME DA (tabela) ALUNOS")
+
