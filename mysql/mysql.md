@@ -3,6 +3,14 @@
 _Uma visão geral sobre o MySQL_
 
 
+## Breve introdução
+
+
+>A grande maioria das empresas hoje trabalha com grandes quantidades de dados. Isso pode ser informações do produto, dados do cliente, detalhes do cliente, dados do funcionário e assim por diante. A maioria das pessoas que são novas no trabalho com dados o fará usando planilhas. Softwares como o Microsoft Excel têm muitas ferramentas para manipular e analisar dados, mas à medida que o volume e a complexidade dos dados com os quais você está trabalhando aumentam, essas ferramentas podem se tornar ineficientes.
+
+>Uma maneira mais poderosa e controlada de trabalhar com dados é armazená-los em um banco de dados e usar SQL para acessá-los e manipulá-los. SQL funciona extremamente bem para dados organizados e pode ser usado de forma muito eficaz para inserir, recuperar e manipular dados com apenas algumas linhas de código.
+
+
 
 ## Para que serve um banco de dados?
 
@@ -69,29 +77,57 @@ _Uma visão geral sobre o MySQL_
 
 
 
-> **SQL** ***(Structured Query Language)\*** quer dizer Linguagem de Consulta Estruturada. Permite a manipulação de tabelas do banco de dados.
+> **SQL** *(Structured Query Language)\* quer dizer Linguagem de Consulta Estruturada. Permite a manipulação de tabelas do banco de dados.
 
 Ela é a linguagem de busca de informações em bancos de dados relacionais. A linguagem SQL é dividida em:
 
 
+#### **DDL - Linguagem de Definição de Dados**
+
+Em DDL (Data Definition Language), os comandos que se enquadram nessa categoria trabalham com a definição de uma tabela, um banco de dados ou qualquer coisa dentro dele. Qualquer comando que fale sobre a criação de algo em SQL faz parte do DDL. Alguns exemplos de tais comandos são CREATE, ALTER e DROP.
+
+| Comando        | Descrição                                                    |
+| :------------- | :----------------------------------------------------------- |
+| CREATE         | cria um novo banco de dados ou uma nova tabela                          |
+| ALTER          | modifica a estrutura de um banco de dados ou uma tabela                          |
+| DROP           | exclui um banco de dados ou uma tabela                          |
+| TRUNCATE       | remove todos os registros de tabela e os espaços de tabela alocados                          |
+| RENAME         | renomeia um banco de dados ou uma tabela                          |
+
 
 #### **DML - Linguagem de Manipulação de Dados**
 
-Permite manipulação de dados, como exclusão, inclusão e alterações. Exemplos de comandos:
+Em DML (Data Manipulation Language), você não lida com os contêineres de dados, mas com os próprios dados. Quando você precisa atualizar os dados em si, ou realizar cálculos ou operações neles, você usa o DML. Os comandos que fazem parte desta linguagem (ou sublinguagem) incluem INSERT, UPDATE, MERGE e DELETE.
+A DML permite trabalhar nos dados sem modificar o contêiner ou os procedimentos armazenados. Uma cópia dos dados é criada e as operações são executadas nessa cópia dos dados. Essas operações são executadas usando o DML. A tabela a seguir mostra os comandos DML:
 
-- INSERT (permite adicionar dados)
-- UPDATE (permite atualizar dados)
-- DELETE (permite apagar dados)
+| Comando        | Descrição                                                    |
+| :------------- | :----------------------------------------------------------- |
+| INSERT         | adicionar novas linhas a uma tabela                          |
+| UPDATE         | atualiza os dados ou linhas ou registros existentes em uma tabela                          |
+| DELETE         | exclui registros de uma tabela                          |
+| MERGE          | isso também é chamado de UPSERT (como em UPDATE/INSERT). MERGE é usado para inserir novos registros ou atualizar registros existentes com base nas condições                          |
 
 
+#### **DCL - Linguagem de controle de dados**
 
-#### **DDL - Linguagem de Definição de Dados**
+Em DCL (Data Control Language), quando nos sentamos e pensamos sobre o que a palavra controle significa no contexto dos dados, pensamos em permitir e proibir ações nos dados. Em termos de SQL, ou em termos de dados, trata-se de autorização. Portanto, os comandos que se enquadram nesta categoria são GRANT e REVOKE. Eles controlam o acesso aos dados. A tabela a seguir os explica:
 
-Permite a criação e alteração de dados. Exemplos de comandos:
+| Comando        | Descrição                                                    |
+| :------------- | :----------------------------------------------------------- |
+| GRANT          | dá privilégios de acesso a um usuário aos dados em um banco de dados                          |
+| REVOKE         | retira os privilégios que um usuário tem sobre os dados especificados                          |
 
-- CREATE TABLE (cria tabelas)
-- ALTER TABLE (altera tabelas)
-- DROP TABLE (apaga tabelas).
+
+#### **TCL - Linguagem de controle de transações**
+
+Em TCL (Transaction Control Language), qualquer coisa que faça uma alteração nos dados é chamada de transação. Quando você executa uma operação de manipulação de dados, a manipulação acontece com os dados em um local temporário e não com a própria tabela/banco de dados. O resultado é mostrado após a operação. Para gravar ou remover algo do banco de dados, você precisa usar um comando para solicitar que o banco de dados se atualize com o novo conteúdo. A aplicação dessas alterações ao banco de dados é chamada de transação e é feita usando o TCL. Os comandos associados a esta linguagem são COMMIT e ROLLBACK. A tabela a seguir explica esses comandos em detalhes:
+
+| Comando        | Descrição                                                    |
+| :------------- | :----------------------------------------------------------- |
+| COMMIT         | salva as alterações permanentemente no banco de dados                          |
+| ROLLBACK       | restaura o banco de dados para sua forma original até o último COMMIT                          |
+| SAVEPOINT      | crie um ponto para uso tardio para reverter as novas alterações                          |
+| SET TRANSACTION | define as propriedades da transação para torná-la somente leitura, por exemplo                          |
 
 
 
